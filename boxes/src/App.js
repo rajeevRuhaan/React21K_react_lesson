@@ -1,5 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
+import Header from "./Header";
+import Footer from "./Footer";
 
 const Box = (props) => {
   return (
@@ -15,6 +17,7 @@ function App() {
   return (
     <div>
       <header>
+        <Header />
         <h1>Logo</h1>
       </header>
       <main>
@@ -22,7 +25,10 @@ function App() {
         <Box name="John Doe" age="35" title="Doctor" />
         <Box name="Mick jimi" age="45" title="Developer" />
       </main>
-      <footer>@copyright </footer>
+      <footer>
+        <Footer />
+        @copyright{" "}
+      </footer>
     </div>
   );
 }
