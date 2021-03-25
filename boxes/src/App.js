@@ -1,12 +1,12 @@
 import logo from "./logo.svg";
 import "./App.css";
 
-const Box = () => {
+const Box = (props) => {
   return (
     <div className="box">
-      <h2>Name: Component</h2>
-      <p>Age: some age</p>
-      <p>Title: Manager </p>
+      <h2>Name: {props.name}</h2>
+      <p>Age: {props.age}</p>
+      <p>Title: {props.title} </p>
     </div>
   );
 };
@@ -18,24 +18,9 @@ function App() {
         <h1>Logo</h1>
       </header>
       <main>
-        <Box />
-        <Box />
-        <Box />
-        <div className="box">
-          <h2>Name: Some name</h2>
-          <p>Age: some age</p>
-          <p>Title: </p>
-        </div>
-        <div className="box">
-          <h2>Name: Sone name</h2>
-          <p>Age: some age</p>
-          <p>Title: </p>
-        </div>
-        <div className="box">
-          <h2>Name: Sone name</h2>
-          <p>Age: some age</p>
-          <p>Title: </p>
-        </div>
+        <Box name="rajeev Sah" age="25" title="Teacher" />
+        <Box name="John Doe" age="35" title="Doctor" />
+        <Box name="Mick jimi" age="45" title="Developer" />
       </main>
       <footer>@copyright </footer>
     </div>
