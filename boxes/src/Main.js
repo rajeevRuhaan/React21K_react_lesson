@@ -21,10 +21,14 @@ class Main extends Component {
       },
     ],
   };
+  handleClick = () => {
+    console.log("wow again clicked");
+  };
 
   render() {
     return (
       <main>
+        <button onClick={this.handleClick}> Click Me again </button>
         <div>
           <Box
             name={this.state.persons[0].name}
