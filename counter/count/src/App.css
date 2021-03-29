@@ -1,0 +1,26 @@
+.circle {
+  align-self: center;
+  background-color: grey;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  display: flex;
+  margin: 30px auto;
+
+  justify-content: center;
+  align-items: center;
+  color: brown;
+}
+.button {
+  background-color: greenyellow;
+}
+
+.odd {
+  background-color: skyblue;
+}
+.even {
+  background-color: lightcoral;
+}
+p {
+  color: blueviolet;
+}

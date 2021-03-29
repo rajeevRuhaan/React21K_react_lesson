@@ -10,7 +10,7 @@ class Main extends Component {
         title: "CEO",
       },
       {
-        name: "Cat",
+        name: "Tom",
         age: 24,
         title: "Technican",
       },
@@ -23,6 +23,25 @@ class Main extends Component {
   };
   handleClick = () => {
     console.log("wow again clicked");
+    this.setState({
+      persons: [
+        {
+          name: "Jon",
+          age: 24,
+          title: "Director",
+        },
+        {
+          name: "Tom",
+          age: 24,
+          title: "IT",
+        },
+        {
+          name: "Dom",
+          age: 24,
+          title: "IT",
+        },
+      ],
+    });
   };
 
   render() {
