@@ -1,0 +1,25 @@
+.circle {
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  background-color: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+.green {
+  background-color: green;
+}
+.red {
+  background-color: red;
+}
+.orange {
+  background-color: orange;
+}
+.yellow {
+  background-color: yellow;
+}
+.active {
+  background-image: url("../assets/image/sun-with-face.svg");
+}
