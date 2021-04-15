@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import Box from "./Box";
+import BoxCard from "./BoxCard";
 
-class Main extends Component {
+class BoxexList extends Component {
   state = {
     persons: [
       {
@@ -49,19 +49,19 @@ class Main extends Component {
       <main>
         <button onClick={this.handleClick}> Click Me again </button>
         <div>
-          <Box
+          <BoxCard
             name={this.state.persons[0].name}
             age={this.state.persons[0].age}
             title={this.state.persons[0].title}
           />
 
-          <Box
+          <BoxCard
             name={this.state.persons[1].name}
             age={this.state.persons[1].age}
             title={this.state.persons[1].title}
           />
 
-          <Box
+          <BoxCard
             name={this.state.persons[2].name}
             age={this.state.persons[2].age}
             title={this.state.persons[2].title}
@@ -72,4 +72,4 @@ class Main extends Component {
   }
 }
 
-export default Main;
+export default BoxexList;

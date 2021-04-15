@@ -1,18 +1,21 @@
-import logo from "./logo.svg";
+import { BrowserRouter as Router } from "react-router-dom";
+
+import Header from "./Components/Header";
+import Footer from "./Components/Footer";
+import Main_router from "./Components/Main";
+
 import "./App.css";
-import Header from "./Header";
-import Footer from "./Footer";
-import Main from "./Main";
 
 function App() {
   return (
-    <div>
+    <Router>
       <Header />
 
-      <Main />
+      {/* <Main /> */}
+      <Main_router />
 
       <Footer />
-    </div>
+    </Router>
   );
 }
 
