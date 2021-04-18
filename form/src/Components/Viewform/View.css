@@ -1,0 +1,9 @@
+.cont {
+  background: rgb(237, 241, 245);
+  border: 5px;
+  width: 400px;
+  margin: 50px;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 18px;
+}

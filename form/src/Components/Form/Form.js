@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import View from "../Viewform/View";
 import Popup from "../Popup/popup";
+import "./Form.css";
 
 class Form extends Component {
   state = [
@@ -24,58 +25,74 @@ class Form extends Component {
   render() {
     return (
       <div>
-        <form>
-          <label>
-            First Name
-            <input
-              type="text"
-              name="firstname"
-              id="firstname"
-              onChange={this.handleChange}
-            />
-          </label>
-          <label>
-            Last Name
-            <input
-              type="text"
-              name="lastname"
-              id="lastname"
-              onChange={this.handleChange}
-            />
-          </label>
-          <label>
-            Phone Number
-            <input
-              type="text"
-              name="phonenumber"
-              id="phonenumber"
-              onChange={this.handleChange}
-            />
-          </label>
-          <label>
-            Message
-            <textarea
-              type="text"
-              name="message"
-              id="message"
-              onChange={this.handleChange}
-            />
-          </label>
-          <label>
-            Role
-            <select id="role" name="role" onChange={this.handleChange}>
-              <option>Teacher</option>
-              <option>Student</option>
-              <option>Other</option>
-            </select>
-          </label>
-          <input
-            type="submit"
-            value="Submit"
-            id="submit"
-            onClick={this.handleSubmit}
-          />
-        </form>
+        <div className="container">
+          <form>
+            <div className="form-group mb20">
+              <label>
+                First Name
+                <input
+                  type="text"
+                  name="firstname"
+                  id="firstname"
+                  onChange={this.handleChange}
+                />
+              </label>
+            </div>
+            <div className="form-group mb20">
+              <label>
+                Last Name
+                <input
+                  type="text"
+                  name="lastname"
+                  id="lastname"
+                  onChange={this.handleChange}
+                />
+              </label>
+            </div>
+            <div className="form-group mb20">
+              <label>
+                Phone Number
+                <input
+                  type="text"
+                  name="phonenumber"
+                  id="phonenumber"
+                  onChange={this.handleChange}
+                />
+              </label>
+            </div>
+            <div className="form-group mb20">
+              <label>
+                Message
+                <textarea
+                  type="text"
+                  name="message"
+                  rows="10"
+                  cols="30"
+                  id="message"
+                  onChange={this.handleChange}
+                />
+              </label>
+            </div>
+            <div className="form-group mb20">
+              <label>
+                Role
+                <select id="role" name="role" onChange={this.handleChange}>
+                  <option>Teacher</option>
+                  <option>Student</option>
+                  <option>Other</option>
+                </select>
+              </label>
+            </div>
+            <div className="form-group mb20">
+              <input
+                type="submit"
+                value="Submit"
+                id="submit"
+                onClick={this.handleSubmit}
+              />
+            </div>
+          </form>
+        </div>
         <View
           firstname={this.state.firstname}
           lastname={this.state.lastname}
