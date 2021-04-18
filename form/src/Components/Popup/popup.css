@@ -1,12 +1,13 @@
 .popup {
+  z-index: 1;
   background: rgb(243, 104, 104);
-  padding: 1rem;
+  padding: rem;
   width: 40%;
   min-height: 25%;
   border-radius: 5px;
-  position: relative;
+
   display: grid;
   justify-items: center;
   align-items: center;
-  margin: auto;
+  margin: -900px auto;
 }

@@ -18,7 +18,7 @@ class Form extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-
+    console.log("wow");
     this.setState({ submit: true });
   };
 
