@@ -1,13 +1,27 @@
-.popup {
-  z-index: 1;
-  background: rgb(243, 104, 104);
-  padding: rem;
-  width: 40%;
-  min-height: 25%;
-  border-radius: 5px;
-
-  display: grid;
-  justify-items: center;
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: cadetblue;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  margin: -900px auto;
+}
+
+.popup {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 70%;
+  width: 50%;
+  background-color: cornsilk;
+  padding: 2rem;
+  box-shadow: 0 0 5px #333;
+  margin: 0 auto;
+}
+
+.popup p {
+  padding: 1rem 0;
 }

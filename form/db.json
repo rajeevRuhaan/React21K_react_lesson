@@ -1,0 +1,57 @@
+{
+
+    "notes":[
+        {
+            "id":1,
+            "firstname":"Rajeev",
+            "lastname": "Ho",
+            "phonenumber": "123456",
+            "message": "Hello how are you?",
+            "role":"teacher"
+        },
+        {
+            "id":2,
+            "firstname":"John",
+            "lastname": "jack",
+            "phonenumber": "999999",
+            "message": "That is also important",
+            "role":"Student"
+        },
+        {
+            "id":3,
+            "firstname":"Ha",
+            "lastname": "hoo",
+            "phonenumber": "789456",
+            "message": "Toady is so  hot.",
+            "role":"Other"
+        }
+    ],
+
+    
+    "something":[
+        {
+            "id":1,
+            "firstname":"cat",
+            "lastname": "Ho",
+            "phonenumber": "123456",
+            "message": "Hello how are you?",
+            "role":"teacher"
+        },
+        {
+            "id":2,
+            "firstname":"Dog",
+            "lastname": "jack",
+            "phonenumber": "999999",
+            "message": "That is also important",
+            "role":"Student"
+        },
+        {
+            "id":3,
+            "firstname":"Foo",
+            "lastname": "hoo",
+            "phonenumber": "789456",
+            "message": "Toady is so  hot.",
+            "role":"Other"
+        }
+    ]
+}
